@@ -1,0 +1,40 @@
+{
+  "name": "jkcms",
+  "version": "1.0.0",
+  "description": "A basic CMS project for learning system design, auth, caching, etc",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && node dist/main.js",
+    "dev": "NODE_ENV=development npm run build:dev && npx nodemon dist/main.js",
+    "build": "npx webpack --config config/webpack.prod.js",
+    "build:dev": "npx webpack --config config/webpack.dev.js"
+  },
+  "author": "Jordan Kelly",
+  "license": "ISC",
+  "dependencies": {
+    "etag": "^1.8.1",
+    "express": "^4.18.1",
+    "html-webpack-plugin": "^5.5.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "regenerator-runtime": "^0.13.9",
+    "request": "^2.88.2",
+    "ts-node": "^10.7.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.2.185",
+    "@types/express": "^4.17.13",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.4",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "nodemon": "^2.0.16",
+    "swc-loader": "^0.2.1",
+    "typescript": "^4.6.4",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-node-externals": "^3.0.0"
+  }
+}

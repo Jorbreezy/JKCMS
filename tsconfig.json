@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "downlevelIteration": true,
+    "lib": ["dom", "dom.iterable"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "noImplicitAny": false,
+    "noEmit": false,
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": "./src",
+    "paths": {
+      "@styles/*": ["assets/styles/*"],
+      "@swc-node/core": ["@swc-node/core/index.ts"],
+      "@swc-node/register/*": ["./register/*"]
+    },
+    "incremental": true
+  },
+  "exclude": ["node_modules", "_backup", "**/*.spec.ts*", "**/*.test.ts*"],
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"]
+}
